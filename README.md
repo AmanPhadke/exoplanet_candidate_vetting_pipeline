@@ -8,7 +8,7 @@ A machine learning pipeline that predicts whether a TESS-detected transit signal
 
 When TESS spots a star dimming on a regular schedule, that dip could be a genuine planet transiting it or it could be caused by something else entirely (an instrument artifact, background noise, two stars passing by etc). Right now a human review team manually labels each candidate as confirmed, false positive, or still pending. This project trains a model to approximate that same call directly from the measured properties of the transit and its host star.
 
-![The transit method: a planet crossing in front of its star causes a periodic dip in brightness](assets/transit-method.svg)
+![The transit method: a planet crossing in front of its star causes a periodic dip in brightness](assets/transit_phase.svg)
 
 ## Data
 
@@ -31,14 +31,14 @@ Excluded on purpose:
 
 ## Pipeline
 
-![Data preparation stage: export, clean and label, select features, split into train/val/test](assets/data-prep-pipeline.svg)
+![Data preparation stage: export, clean and label, select features, split into train/val/test](assets/data_prep_stage.svg)
 
 1. **Export** — pull a snapshot of the TOI table as CSV.
 2. **Clean & label** — filter to CP/KP/FP/FA rows, build the binary target, impute missing values.
 3. **Select features** — keep transit + stellar property columns described above.
 4. **Split** — train / validation / test.
 
-![Modelling stage: compare candidate models, pick the best by validation AUC, then evaluate once on the test set](assets/model-comparison.svg)
+![Modelling stage: compare candidate models, pick the best by validation AUC, then evaluate once on the test set](assets/modelling_stage.svg)
 
 5. **Compare models** — Decision Tree, Random Forest, and XGBoost, tuned via validation AUC.
 6. **Evaluate** — best model scored once on the held-out test set.
