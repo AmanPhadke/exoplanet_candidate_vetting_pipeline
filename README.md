@@ -45,8 +45,6 @@ Excluded on purpose:
 
 ## Results
 
-_TODO — fill in once hyperparameter tuning is finalized. An early, untuned Random Forest pass reached ~0.89 validation AUC, which is a sanity-check number, not a final result._
-
 | Model | Validation AUC | Test AUC |
 |---|---|---|
 | Logistic Regression | — | — |
