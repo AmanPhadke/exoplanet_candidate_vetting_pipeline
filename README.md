@@ -49,7 +49,7 @@ Excluded on purpose:
 |---|---|---|
 | Logistic Regression | 0.786 | 0.756 |
 | Decision Tree | 0.839 | 0.821 |
-| Random Forest | 0.901 | 0.896 |
+| Random Forest | 0.901 | 0.899 |
 | XGBoost | 0.908 | 0.906 |
 
 ## Tech stack
