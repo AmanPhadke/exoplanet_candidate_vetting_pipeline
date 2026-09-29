@@ -47,10 +47,10 @@ Excluded on purpose:
 
 | Model | Validation AUC | Test AUC |
 |---|---|---|
-| Logistic Regression | — | — |
-| Decision Tree | — | — |
-| Random Forest | — | — |
-| XGBoost | — | — |
+| Logistic Regression | 0.786 | 0.755 |
+| Decision Tree | 0.839 | 0.811 |
+| Random Forest | 0.901 | 0.893 |
+| XGBoost | 0.908 | 0.905 |
 
 ## Tech stack
 
