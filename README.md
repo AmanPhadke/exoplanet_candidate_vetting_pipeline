@@ -2,11 +2,11 @@
 
 > Status: **In progress**
 
-A machine learning pipeline that predicts whether a TESS-detected transit signal is a real exoplanet or a false positive, using the same disposition labels NASA's TESS Follow-up Observing Program (TFOPWG) assigns after manual review.
+A machine learning pipeline that predicts whether a TESS-detected transit signal is a real exoplanet or a false positive,using measured properties of the transit and its host star which NASA's TESS Follow-up Observing Program (TFOPWG) assigns after manual review.
 
 ## Why this problem
 
-When TESS spots a star dimming on a regular schedule, that dip could be a genuine planet transiting it or it could be caused by something else entirely (an instrument artifact, background noise, two stars passing by etc). Right now a human review team manually labels each candidate as confirmed, false positive, or still pending. This project trains a model to approximate that same call directly from the measured properties of the transit and its host star.
+When TESS spots a star dimming on a regular schedule, that dip could be a genuine planet transiting it or it could be caused by something else entirely (an instrument artifact, background noise, two stars passing by etc). Right now a human review team manually labels (therefore the name Follow Up Observing Program) each candidate as confirmed , false positive, or still pending. This project trains a model to approximate that same call directly from the measured properties of the transit and its host star.
 
 ![The transit method: a planet crossing in front of its star causes a periodic dip in brightness](assets/transit_phase.svg)
 
