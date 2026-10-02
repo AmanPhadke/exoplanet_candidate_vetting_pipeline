@@ -44,8 +44,7 @@ def predict(candidate: ExoplanetFeatures):
 
     result  = {
         'likely_planet': bool(planet),
-        'planet_probability': float(xgb_pred)
-
+        'planet_probability': f'{float(xgb_pred)  * 100}%'
     }
 
     return result
