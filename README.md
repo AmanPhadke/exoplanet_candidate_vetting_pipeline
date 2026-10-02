@@ -1,7 +1,5 @@
 # Exoplanet Candidate Vetting Pipeline
 
-> Status: **In progress**
-
 A machine learning pipeline that predicts whether a TESS-detected transit signal is a real exoplanet or a false positive,using measured properties of the transit and its host star which NASA's TESS Follow-up Observing Program (TFOPWG) assigns after manual review.
 
 ## Why this problem
@@ -54,7 +52,7 @@ Excluded on purpose:
 
 ## Tech stack
 
-Python, Pandas, NumPy, Scikit-learn, XGBoost
+Python, Pandas, NumPy, Scikit-learn, XGBoost, FastAPI, uvicorn
 
 ## Data source citation
 
